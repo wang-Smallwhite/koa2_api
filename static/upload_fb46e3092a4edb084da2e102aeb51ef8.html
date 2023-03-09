@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+</head>
+<body>
+	<div id="clicks" data-id="1">div1</div>
+	<div id="clicks" data-id="2">div2</div>
+	<div id="clicks" data-id="3">div3</div>
+
+
+	<script type="text/javascript">
+		// $('div#clicks').click(function(e){
+		// 	console.log($(e.target).attr('data-id'));
+		// })
+
+
+
+		const clicks = document.querySelectorAll('#clicks');
+		clicks.forEach((item, index) => {
+			item.addEventListener('click', e=>{
+				console.log(e.target.dataset)
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const DB = require('../../mysql/mysql.js')
+const DB = require('../mysql/mysql.js')
 import jsonwebtoken from 'jsonwebtoken'
 import {JWT_SECRET} from '../common/index'
 class Login {
